@@ -15,7 +15,7 @@ def main():
         consumer_group="weather_reader",
 
         # processing guarantees: 
-        #   - exactly-once   - msg will be processe exactly once
+        #   - exactly-once   - msg will be processes exactly once
         #   - at-least-once  - may be processed more than once
         #   KAFKA native but not in Quix Streams:
         #   - at-most-once   - if process fails it will not be retried
